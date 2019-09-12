@@ -1,0 +1,104 @@
+:root {
+    --main-taybg-color: #ED2148;
+    --main-taytext-color: #fff;
+    --main-txt-color: #8B8B8B;
+    --main-bg-color: #171717;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.tay-color {
+    background-color: var(--main-taybg-color);
+    color: var(--main-taytext-color);
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+.tay-bg-color {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    margin: 0px;
+    height: 100vh;
+
+}
+
+h2{
+    color: var(--main-taytext-color);
+}
+
+label{
+    color: var(--main-taytext-color);
+}
+
+
+.tay-login-box {
+    background: none;
+    border: 1px solid var(--main-txt-color);
+}
+
+.login-logo {
+    position: absolute;
+    right: 0px;
+    float: right;
+}
+
+
+.form-control:disabled,
+.form-control:focus,
+.form-control[readonly] {
+    background: none !important;
+    opacity: 1;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background: none !important;
+    opacity: 1;
+}
+
+.tay-btn {
+    background-color: var(--main-taybg-color);
+    color: var(--main-taytext-color);
+    border: none;
+}
+
+.tay-btn:hover {
+    background-color: var(--main-taybg-color);
+    color: var(--main-taytext-color);
+    border: none;
+}
+
+.image-bottom{
+    position: absolute;
+    bottom: 0px;
+    margin: 0px auto;
+}
+
+.login-photo {
+    max-width:85%;
+    max-height:85%;
+    object-fit: scale-down;
+    object-position: 100% 0;
+}
+
+@media (max-width: 1600px) {
+    .login-photo {
+        max-width:60%;
+        max-height:60%;
+        object-fit: scale-down;
+        object-position: 100% 0;
+    }
+}
+@media (max-width: 768px) {
+    .tay-ligon-logo {
+        display: none !important;
+    }
+
+    .tay-btn {
+        width: 100%;
+    }
+}
